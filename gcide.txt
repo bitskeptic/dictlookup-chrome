@@ -1,0 +1,11 @@
+This is addon includes GCIDE_XML 0.51,
+a translation of GCIDE 0.51 into XML.
+
+The translation was performed
+by Michael Dyck (jmdyck@ibiblio.org)
+on June 11, 2015.
+
+Since GCIDE is made available under the terms
+of the GNU General Public License, GCIDE_XML
+is necessarily also published under those terms.
+See the file gpl.txt or http://www.gnu.org/copyleft/gpl.txt

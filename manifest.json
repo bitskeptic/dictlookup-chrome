@@ -1,0 +1,54 @@
+{
+  "manifest_version": 2,
+  "name": "English Dictionary Lookup",
+  "version": "1.1.3.0",
+
+  "description": "Allows for easy lookup and display of English word definitions within webpages via a double-click and an unobtrusive dialog box.",
+  "offline_enabled": true,
+
+  "icons": {
+    "128": "icons/dictlookup-128.png"
+  },
+
+  "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "index.js" ],
+      "matches": [ "\u003Call_urls>" ]
+  } ],
+  "permissions": [
+    "activeTab"
+  ],
+  "web_accessible_resources": [
+    "lib/gcide/xml_files/gcide_abbreviations.csv",
+    "lib/gcide/xml_files/gcide_abbreviations.xml",
+    "lib/gcide/xml_files/gcide_a.xml",
+    "lib/gcide/xml_files/gcide_b.xml",
+    "lib/gcide/xml_files/gcide_c.xml",
+    "lib/gcide/xml_files/gcide_d.xml",
+    "lib/gcide/xml_files/gcide_e.xml",
+    "lib/gcide/xml_files/gcide_f.xml",
+    "lib/gcide/xml_files/gcide_g.xml",
+    "lib/gcide/xml_files/gcide_h.xml",
+    "lib/gcide/xml_files/gcide_i.xml",
+    "lib/gcide/xml_files/gcide_j.xml",
+    "lib/gcide/xml_files/gcide_k.xml",
+    "lib/gcide/xml_files/gcide_l.xml",
+    "lib/gcide/xml_files/gcide_m.xml",
+    "lib/gcide/xml_files/gcide_n.xml",
+    "lib/gcide/xml_files/gcide_o.xml",
+    "lib/gcide/xml_files/gcide_p.xml",
+    "lib/gcide/xml_files/gcide_q.xml",
+    "lib/gcide/xml_files/gcide_r.xml",
+    "lib/gcide/xml_files/gcide_s.xml",
+    "lib/gcide/xml_files/gcide_symbols.csv",
+    "lib/gcide/xml_files/gcide_t.xml",
+    "lib/gcide/xml_files/gcide_u.xml",
+    "lib/gcide/xml_files/gcide_v.xml",
+    "lib/gcide/xml_files/gcide_w.xml",
+    "lib/gcide/xml_files/gcide_x.xml",
+    "lib/gcide/xml_files/gcide_y.xml",
+    "lib/gcide/xml_files/gcide_z.xml",
+    "lib/gcide/abbr_regex.txt",
+    "lib/gcide/symbols_regex.txt"
+  ]
+}
